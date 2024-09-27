@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Validation des Grades</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Questionnaire grades SP</h1>
+        <div id="menu">
+            <button id="normal-mode" class="mode-button">Mode Normal</button>
+            <button id="revise-button" class="mode-button">Réviser</button>
+        </div>
+        <div id="quiz" class="hidden">
+            <div class="grade-container">
+                <img id="grade-image" src="" alt="grade" class="grade-image">
+            </div>
+            <input type="text" id="grade-input" placeholder="Entrez le grade" class="grade-input">
+            <button id="validate-button" class="validate-button">Valider</button>
+            <p id="score"></p>
+            <button id="back-to-menu-quiz" class="mode-button">Retour au Menu</button>
+        </div>
+        <div id="revise" class="hidden">
+            <h1>Révision des Grades</h1>
+            <div class="table-container">
+                <table id="grades-table">
+                    <!-- Les grades seront insérés ici par JavaScript -->
+                </table>
+            </div>
+            <button id="back-to-menu-revise" class="mode-button">Retour au Menu</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
